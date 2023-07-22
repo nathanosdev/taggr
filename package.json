@@ -55,5 +55,8 @@
         "react-markdown": "8.0.5",
         "remark-gfm": "3.0.1",
         "stream": "^0.0.2"
-    }
+    },
+    "workspaces": [
+        "src/ui"
+    ]
 }

@@ -1,0 +1,12 @@
+@import "./util/theming";
+
+$calm-theme: (
+    "text": #e0e0c8,
+    "background": #343541,
+    "code": white,
+    "clickable": #30d5c8,
+    "accent": gold,
+    "accent-text": #111111,
+);
+
+@include create-theme($calm-theme);

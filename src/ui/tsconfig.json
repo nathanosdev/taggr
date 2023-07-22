@@ -1,0 +1,17 @@
+{
+    "extends": "../../tsconfig.json",
+    "compilerOptions": {
+        "target": "es2019",
+        "module": "es2020",
+        "moduleResolution": "node",
+        "lib": ["ES2020", "DOM", "DOM.Iterable"],
+        "declaration": true,
+        "declarationMap": true,
+        "declarationDir": "./dist",
+        "experimentalDecorators": true,
+        "useDefineForClassFields": false,
+        "outDir": "./dist"
+    },
+    "include": ["src/**/*.ts"],
+    "exclude": ["src/**/*.stories.ts"]
+}

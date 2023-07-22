@@ -1,0 +1,12 @@
+:root {
+    --font-size: 1rem;
+
+    /* Buttons */
+    --btn-font-size: var(--font-size);
+    --btn-font-weight: bold;
+    --btn-border: none;
+    --btn-border-radius: 3px;
+    --btn-padding-y: 0.4em;
+    --btn-padding-x: 0.6em;
+    --btn-text-transform: uppercase;
+}

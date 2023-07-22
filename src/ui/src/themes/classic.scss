@@ -1,0 +1,12 @@
+@import "./util/theming";
+
+$classic-theme: (
+    "text": #d0d0bf,
+    "background": #c3c3b4,
+    "code": black,
+    "clickable": #008080,
+    "accent": orangered,
+    "accent-text": #111111,
+);
+
+@include create-theme($classic-theme);

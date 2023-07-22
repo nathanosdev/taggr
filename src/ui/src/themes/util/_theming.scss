@@ -1,0 +1,31 @@
+@import "./color";
+
+@mixin create-theme($theme-config) {
+    $text: map-get($theme-config, "text");
+    $background: map-get($theme-config, "background");
+    $code: map-get($theme-config, "code");
+    $clickable: map-get($theme-config, "clickable");
+    $accent: map-get($theme-config, "accent");
+    $accent-text: map-get($theme-config, "accent-text");
+
+    :root {
+        --accent: #{$accent};
+
+        --text: #{$text};
+        --code: #{$code};
+
+        --clickable: #{$clickable};
+        --visited-clickable: #{brighten($clickable, 20%)};
+
+        --background: #{$background};
+        --light-background: #{darken($background, 10%)};
+        --dark-background: #{darken($background, 5%)};
+
+        --btn-accent-color: #{$accent-text};
+        --btn-accent-background-color: #{$accent};
+        --btn-accent-hover-color: #{brighten($accent-text, 10%)};
+        --btn-accent-hover-background-color: #{brighten($accent, 10%)};
+        --btn-accent-active-color: #{brighten($accent-text, 20%)};
+        --btn-accent-active-background-color: #{brighten($accent, 20%)};
+    }
+}
